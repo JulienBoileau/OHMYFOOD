@@ -1,0 +1,121 @@
+body
+{
+	font-family: 'Roboto', sans-serif;
+}
+
+h1
+{
+	font-family: 'Shrikhand', cursive;
+}
+
+	/*BODY*/
+
+	/*HEADER*/
+
+body
+{
+	margin: auto;
+}
+
+header
+{
+	width: 100%;
+}
+
+#logo_ohmyfood
+{
+	width: auto;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#logo_ohmyfood img
+{
+	width: 160px;
+	margin-top: 20px;
+}
+
+.en_tete_page_1 a
+{
+	position: absolute;
+	color: black;
+	margin-top: 25px;
+	margin-left: 20px;
+}
+
+#arriere_plan
+{
+	width: 100%;
+	height: 260px;
+	background-image: url(images/restaurants/la_palette_du_gout_2.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 260px;
+	background-size: cover;
+}
+
+#image_en_tete img
+{
+	width: 100%;
+	height : 260px;
+	margin-left: 0px;
+	object-fit: cover;
+}
+
+
+	/*SECTION*/
+
+section
+{
+	width: 100%;
+	background: whitesmoke;
+	border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
+	margin-top: -55px;
+	padding-top: 10px;
+}
+
+h1
+{
+	margin-left: 20px;
+	font-size: 25px;
+}
+
+h2
+{
+	margin-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	width: 40px;
+	font-size: 15px;
+	font-weight: 400;
+	border-bottom: 3px #99E2D0 solid;
+}
+
+section i
+{
+	padding-left: 80px;
+}
+
+#fricassee
+{
+	width: 85%;
+	margin-left: 10px;
+	margin-top: 35px;
+	padding-left: 15px;
+	padding-right: 10px;
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
+	font-size: 17px;
+	line-height: 24px;
+	background: white;
+	border-radius: 20px;
+}
+
+#fricassee span
+{
+	padding-right: 40%;
+	font-size: 15px;
+	white-space: nowrap;
+}
+
+
