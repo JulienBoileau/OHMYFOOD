@@ -1,0 +1,247 @@
+body
+{
+	font-family: 'Roboto', sans-serif;
+}
+
+h1
+{
+	font-family: 'Shrikhand', cursive;
+}
+
+	/*BODY*/
+
+	/*HEADER*/
+
+body
+{
+	margin: auto;
+}
+
+header
+{
+	width: 100%;
+}
+
+#logo_ohmyfood
+{
+	width: auto;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#logo_ohmyfood img
+{
+	width: 160px;
+	margin-top: 20px;
+}
+
+.en_tete_page_1 a
+{
+	position: absolute;
+	color: black;
+	margin-top: 25px;
+	margin-left: 20px;
+	transform: scale(1.0);
+}
+
+.en_tete_page_1 a:hover
+{
+	transform: scale(1.2);
+	transition-duration: 500ms;
+}
+
+#arriere_plan
+{
+	width: 100%;
+	height: 260px;
+	background-image: url(images/restaurants/a_la_francaise_2.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 260px;
+	background-size: cover;
+}
+
+#image_en_tete img
+{
+	width: 100%;
+	height : 260px;
+	margin-left: 0px;
+	object-fit: cover;
+}
+
+
+	/*SECTION*/
+
+section
+{
+	width: 100%;
+	background: whitesmoke;
+	border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
+	margin-top: -55px;
+	padding-top: 10px;
+	padding-bottom: 70px;
+}
+
+.animation:hover
+{
+	transform: translateX(-10%);
+	transition-duration: 1s;
+	background-color: #99E2D0;
+	color: white;
+}
+
+.animation
+{
+	display: flex;
+	position: relative;
+	font-size: 22px;
+	margin-left: 82%;
+	margin-top: -65px;
+	width: 12%;
+	height: 65px;
+	color: transparent;
+	background-color: transparent;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	transform: translateX(40%);
+}
+
+.animation i
+{	
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 20px;
+	transform: rotate(360deg);
+}
+
+.animation i:hover
+{
+	transform: rotate(0deg);
+	transition-duration: 500ms;
+}
+
+
+
+h1
+{
+	margin-left: 20px;
+	font-size: 25px;
+}
+
+h2
+{
+	margin-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	width: 40px;
+	font-size: 15px;
+	font-weight: 400;
+	border-bottom: 3px #99E2D0 solid;
+}
+
+section i
+{
+	position: absolute;
+	margin-left: 80%;
+	margin-top: 4px;
+}
+
+
+.deuxieme_ligne
+{
+	font-size: 15px;
+	white-space: nowrap;
+}
+
+.prix
+{
+	position: absolute;
+	margin-left: 70%;
+	margin-top: 22px;
+}
+
+
+
+.tartare, #veloute, #soupe, #coquilles, #magret, #pigeonneau, #violettes, #fondant, #millefeuille
+{
+	display: flex;
+	align-items: center;
+	width: 85%;
+	height: 65px;
+	margin-left: 10px;
+	margin-top: 15px;
+	padding-left: 15px;
+	padding-right: 10px;
+	font-size: 17px;
+	line-height: 22px;
+	background: white;
+	border-radius: 15px;
+	box-shadow: 1px 1px 8px #DCDCDC;
+}
+
+.desserts
+{
+	margin-bottom: 60px;
+}
+
+.entrees a
+{
+	text-decoration: none;
+	color: black;
+}
+
+#commander a
+{
+	margin-left: 25%;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: 400;
+	background: linear-gradient(#FF79DA, #9356DC);
+	border-radius: 40px;
+	border-style: none;	
+}
+
+#commander a:hover
+{
+	opacity: 0.8;
+	box-shadow: -2px 2px 5px lightgrey;
+}
+
+
+	/*FOOTER*/
+
+
+footer
+{
+	width: auto;
+	padding: 25px;
+	background: #404040;
+}
+
+footer p
+{
+	width: auto;
+	color: white;
+	line-height: 27px;
+}
+
+footer i
+{
+	padding-right: 7px;
+}
+
+#logo_footer_ohmyfood img
+{
+	filter: invert(100%);
+	width: 100px;
+}
+
+
+
+
+
