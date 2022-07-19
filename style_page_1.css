@@ -82,30 +82,44 @@ section
 	padding-bottom: 70px;
 }
 
-.animation i:hover
+.animation:hover
 {
-	transform: translateX(0px);
+	transform: translateX(-10%);
 	transition-duration: 1s;
 	background-color: #99E2D0;
 	color: white;
 }
 
-.animation i
+.animation
 {
 	display: flex;
-	position: absolute;
-	justify-content: center;
-	align-items: center;
-	margin-left: 79%;
+	position: relative;
+	font-size: 22px;
+	margin-left: 82%;
 	margin-top: -65px;
-	width: 15%;
+	width: 12%;
 	height: 65px;
 	color: transparent;
 	background-color: transparent;
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
-	transform: translateX(30px);
+	transform: translateX(40%);
 }
+
+.animation i
+{	
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 20px;
+	transform: rotate(360deg);
+}
+
+.animation i:hover
+{
+	transform: rotate(0deg);
+	transition-duration: 500ms;
+}
+
 
 
 h1
