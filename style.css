@@ -1,10 +1,78 @@
+
+	/*BODY*/
+
 body, .presentation input
 {
 font-family: 'Roboto', sans-serif;
 }
 
 
-	/*BODY*/
+	/*ANIMATION CHARGEMENT*/
+
+.loader
+{
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	opacity: 0.8;
+	width: 100%;
+	height: 100vh;
+	background-color: #FFFFFF;
+	inset: 0;
+	animation: loading 1s 3s forwards;
+}
+
+.loader img
+{
+	width: 150px;
+	animation: scale 1s infinite;
+}
+
+.loader i
+{
+	color: #FF79DA;
+	animation: turn 3s linear;
+	margin-left: 40px;
+}
+
+@keyframes scale
+{
+	from
+	{
+		transform: scale(1.0);
+	}
+
+	to
+	{
+		transform: scale(1.2);
+	}
+}
+
+@keyframes loading
+{
+	from
+	{
+		z-index: 1;
+		opacity: 0.9;
+	}
+
+	to
+	{
+		z-index: -1;
+		opacity: 0;
+	}
+}
+
+@keyframes turn
+{
+	to
+	{
+		transform: rotate(360deg);
+	}
+}
+
 
 	/*HEADER*/
 
@@ -86,6 +154,8 @@ h1
 .presentation a:hover
 {
 	opacity: 0.8;
+	box-shadow: -2px 5px 10px black;;
+	transition-duration: 500ms;
 }
 
 
@@ -213,23 +283,33 @@ h1
 
 .restaurants figcaption
 {
+	width: 100%;
 	padding-left: 15px;
-	padding-top: 3px;
-	line-height: 22px;
+	padding-top: 15px;
+	padding-bottom: 12px;
+	line-height: 10px;
 }
 
-.restaurants i
+.deuxieme_ligne
 {
-	position: absolute;
-	font-size: 28px;
-	padding-top: 8px;
-	padding-left: 72%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
-.restaurants i:hover
+.deuxieme_ligne i
+{
+	margin-right: 5%;
+	font-size: 26px;
+}
+
+.deuxieme_ligne i:hover
 {
 	font-weight: 800;
-	color: #9356DC;
+	color: transparent;
+	background-clip: text;
+	background-image: linear-gradient(to top, #FF79DA, #9356DC);
+		transition: 500ms;
 }
 
 
@@ -253,6 +333,12 @@ footer p
 footer i
 {
 	padding-right: 7px;
+}
+
+footer a
+{
+	text-decoration: none;
+	color: white;
 }
 
 #logo_footer_ohmyfood img
@@ -313,26 +399,36 @@ footer i
  	.restaurants_boutons
  	{
  		display: flex;
- 		flex-wrap: nowrap;
- 		width: 100%;
  	}
 
  	.restaurants figure
  	{
  		position: relative;
- 	}	
-
- 	.restaurants i
- 	{
- 		position: absolute;
- 		margin-top: 20px;
- 		margin left: 95%;
- 		font-size: 20px;
  	}
+
+	.deuxieme_ligne
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.deuxieme_ligne i
+	{
+		margin-right: 5%;
+		font-size: 26px;
+	}
+
+	.deuxieme_ligne i:hover
+	{
+		font-weight: 800;
+		color: #9356DC;
+			transition: 500ms;
+}
 
  	.restaurants span
  	{
- 		margin-left: 35%;
+ 		margin-right: 5%;
  	}
  }
 
@@ -374,25 +470,38 @@ footer i
  	{
  		display: flex;
  		flex-wrap: nowrap;
+ 		justify-content: center;
  		width: 100%;
  	}
 
- 	.restaurants figure
- 	{
- 		position: relative;
- 	}	
+	.deuxieme_ligne
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
 
- 	.restaurants i
- 	{
- 		position: absolute;
- 		margin-top: 20px;
- 		margin left: 95%;
- 		font-size: 20px;
- 	}
+	.deuxieme_ligne i
+	{
+		margin-right: 5%;
+		font-size: 26px;
+	}
+
+	.deuxieme_ligne i:hover
+	{
+		font-weight: 800;
+		color: #9356DC;
+			transition: 500ms;
+	}
+
+	.restaurants figure
+	{
+		position: relative;
+	}
 
  	.restaurants span
  	{
- 		margin-left: 35%;
+ 		margin-right: 5%;
  	}
 
  	footer p
