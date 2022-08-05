@@ -95,39 +95,57 @@
 	}
 
 
-	h1
+	.titre_restaurant
 	{
-		margin-left: 20px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 91%
+	}
+
+	.titre_restaurant a
+	{
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+	}
+
+	.titre_restaurant i
+	{
 		font-size: 25px;
 	}
 
+	.titre_restaurant i:hover
+	{
+		font-weight: 800;
+		color: transparent;
+		
+		-webkit-background-clip: text;
+		background-clip: text;
+		background-image: -webkit-linear-gradient(linear, left bottom, left top, #9356DC, #FF79DA);
+		background-image: linear-gradient(to top, #FF79DA, #9356DC);
+			transition: 500ms;
+	
+	
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke: 0;
+	}
 
+	h1
+	{
+		margin-left: 4%;
+		font-size: 25px;
+	}
 
 	h2
 	{
-		margin-left: 20px;
+		margin-left: 4%;
 		padding-top: 10px;
 		padding-bottom: 5px;
 		width: 40px;
 		font-size: 15px;
 		font-weight: 400;
 		border-bottom: 3px #99E2D0 solid;
-	}
-
-
-
-	h1 i
-	{
-		position: absolute;
-		margin-left: 85%;
-		margin-top: 4px;
-	}
-
-	h1 i:hover
-	{
-		font-weight: 800;
-		color: #9356DC;
-			transition: 500ms;
 	}
 
 	.entrees_boutons p, .plats_boutons p, .desserts_boutons p
@@ -159,7 +177,7 @@
 		display: flex;
 		font-size: 20px;
 		margin-top: -65px;
-		margin-left: 92%;
+		margin-left: 100%;
 		width: 60px;
 		height: 65px;
 		border-top-right-radius: 15px;
@@ -185,7 +203,7 @@
 	.bouton:hover + .animation_fond
 	{
 		opacity: 1;
-		margin-left: 82%;
+		margin-left: calc(100% - 70px);
 		background-color: #99E2D0;
 		transition-duration: 0.5s;
 	}
@@ -211,7 +229,7 @@
 		align-items: center;
 		width: 90%;
 		height: 65px;
-		margin-left: 10px;
+		margin: auto;
 		margin-top: 15px;
 		padding-left: 15px;
 		font-size: 17px;
@@ -301,6 +319,9 @@
 
 	.entrees a, .plats a, .desserts a
 	{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
 		text-decoration: none;
 		color: black;
 	}
@@ -381,24 +402,24 @@
  @media screen and (min-width: 768px) and (max-width: 912px)	
 
  {
+ 	.titre_restaurant
+ 	{
+ 		display: flex;
+ 		justify-content: center;
+ 		width: 100%;
+ 	}
+
+ 	.titre_restaurant i
+ 	{
+ 		margin-left: 100%;
+ 		font-size: 30px;
+ 	}
 
  	h1
  	{
- 		margin-left: 35%;
  		font-size: 32px;
+ 		margin-left: 0;
  	}
-
- 	h1 i
- 	{
- 		margin-left: 55%;
- 	}
-
-	h1 i:hover
-	{
-		font-weight: 800;
-		color: #9356DC;
-			transition: 500ms;
-	}
 
  	.menu
  	{
@@ -452,7 +473,7 @@
 		display: flex;
 		font-size: 20px;
 		margin-top: -125px;
-		margin-left: 92%;
+		margin-left: 100%;
 		width: 60px;
 		height: 125px;
 		border-top-right-radius: 15px;
@@ -477,7 +498,7 @@
 	.bouton:hover + .animation_fond
 	{
 		opacity: 1;
-		margin-left: 78%;
+		margin-left: calc(100% - 60px - 2%);
 		background-color: #99E2D0;
 		transition-duration: 0.5s;
 	}
@@ -509,23 +530,24 @@
 
  {
 
+ 	.titre_restaurant
+ 	{
+ 		display: flex;
+ 		justify-content: center;
+ 		width: 100%;
+ 	}
+
+ 	.titre_restaurant i
+ 	{
+ 		margin-left: 100%;
+ 		font-size: 30px;
+ 	}
+
  	h1
  	{
- 		margin-left: 37%;
  		font-size: 32px;
+ 		margin-left: 0;
  	}
-
- 	h1 i
- 	{
- 		margin-left: 55%;
- 	}
-
-	h1 i:hover
-	{
-		font-weight: 800;
-		color: #9356DC;
-			transition: 500ms;
-	}
 
 	.menu
  	{
@@ -570,7 +592,7 @@
 		display: flex;
 		font-size: 20px;
 		margin-top: -125px;
-		margin-left: 92%;
+		margin-left: 100%;
 		width: 60px;
 		height: 125px;
 		border-top-right-radius: 15px;
@@ -596,7 +618,7 @@
 	.bouton:hover + .animation_fond
 	{
 		opacity: 1;
-		margin-left: 78%;
+		margin-left: calc(100% - 60px - 2%);
 		background-color: #99E2D0;
 		transition-duration: 0.5s;
 	}
