@@ -132,12 +132,6 @@
 		-webkit-text-stroke: 0;
 	}
 
-	.deuxieme_ligne
-	{
-		white-space: nowrap;
-		text-overflow: ellipsis;
-	}
-
 	h1
 	{
 		margin-left: 4%;
@@ -198,6 +192,19 @@
 		color: white;
 		margin-top: 18px;
 		margin-left: 20px;
+	}
+
+	.compo
+	{
+		width: 90%;
+	}
+
+	.bouton:hover .compo, .bouton:hover .premiere_ligne
+	{
+		width: 85%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 
 	.bouton:hover p
@@ -525,7 +532,7 @@
 				  transform: rotate(0deg);
 	}
 
-	 }
+}
 
 
 
@@ -655,9 +662,50 @@
 
 
 
+/* RESPONSIVE ANIMATION */
 
 
+ @media screen and (max-width: 360px) 
+{
+	.bouton:hover + .animation_fond
+	{
+		opacity: 1;
+		margin-left: calc(100% - 65px);
+		background-color: #99E2D0;
+		transition-duration: 0.5s;
+	}
 
+	.bouton:hover .deuxieme_ligne
+	{
+		transition-duration: 0.5s;
+		width: 78%;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
 
+	.bouton
+	{
+		height: 80px;
+	}
+}
 
+ @media screen and (min-width: 550px) and (max-width: 767px) 
+ {
+ 	.bouton:hover + .animation_fond
+	{
+		opacity: 1;
+		margin-left: calc(100% - 78px);
+		background-color: #99E2D0;
+		transition-duration: 0.5s;
+	}
 
+	.bouton:hover p
+	{
+		transition-duration: 0.5s;
+		width: 90%;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+ }
