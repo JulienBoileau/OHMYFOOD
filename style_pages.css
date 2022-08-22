@@ -199,7 +199,7 @@
 		width: 90%;
 	}
 
-	.bouton:hover .compo, .bouton:hover .premiere_ligne
+	.bouton:hover .compo, .bouton:hover .premiere_ligne strong
 	{
 		width: 85%;
 		white-space: nowrap;
@@ -453,8 +453,8 @@
 
  	.bouton
  	{
- 		padding-bottom: 30px;
- 		padding-top: 30px;
+ 		padding-bottom: 35px;
+ 		padding-top: 35px;
  		line-height: 20px;
  	}
 
@@ -486,10 +486,10 @@
 		opacity: 0;
 		display: flex;
 		font-size: 20px;
-		margin-top: -125px;
+		margin-top: -135px;
 		margin-left: 100%;
 		width: 60px;
-		height: 125px;
+		height: 135px;
 		border-top-right-radius: 15px;
 		border-bottom-right-radius: 15px;
 	}
@@ -503,6 +503,14 @@
 		margin-left: 20px;
 	}
 
+	.bouton:hover .compo, .bouton:hover .premiere_ligne strong
+	{
+		width: 95%;
+		white-space: normal;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
 	.bouton:hover p
 	{
 		transition-duration: 0.5s;
@@ -512,7 +520,7 @@
 	.bouton:hover + .animation_fond
 	{
 		opacity: 1;
-		margin-left: calc(100% - 60px - 2%);
+		margin-left: calc(100% - 60px);
 		background-color: #99E2D0;
 		transition-duration: 0.5s;
 	}
@@ -592,6 +600,11 @@
 		width: 70%;
 	}
 
+	.compo
+	{
+		width: 80%;
+	}
+
  	.deuxieme_ligne
 
  	{
@@ -622,10 +635,18 @@
 		margin-left: 20px;
 	}
 
+	.bouton:hover .compo, .bouton:hover .premiere_ligne strong
+	{
+		width: 90%;
+		white-space: normal;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
 	.bouton:hover p
 	{
 		transition-duration: 0.5s;
-		width: 72%; /* voir calc() */
+		width: 72%; 
 	}
 
 
@@ -684,10 +705,6 @@
 		text-overflow: ellipsis;
 	}
 
-	.bouton
-	{
-		height: 80px;
-	}
 }
 
  @media screen and (min-width: 550px) and (max-width: 767px) 

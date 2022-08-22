@@ -154,7 +154,7 @@ h1
 .presentation a:hover
 {
 	opacity: 0.8;
-	box-shadow: -2px 5px 10px black;;
+	box-shadow: -2px 5px 10px black;
 	transition-duration: 500ms;
 }
 
@@ -176,10 +176,10 @@ h1
 	color: black;
 }
 
-.navigation i:hover
+/*.navigation i:hover
 {
 	color: #9356DC;
-}
+}*/
 
 .navigation figure
 {
@@ -192,14 +192,18 @@ h1
 	padding: 25px;
 	font-size: 18px;
 	font-weight: 600;
-	transform: scale(1.0);
 }
 
 .navigation figure:hover
 {
 	background-color: #E6E6FA;
-	transform: scale(1.05);
 	transition-duration: 500ms;
+}
+
+
+.navigation_boutons figure:hover ~ .navigation_boutons i
+{
+	color: lightblue;
 }
 
 .navigation i
@@ -279,6 +283,13 @@ h1
 {
 	text-decoration: none;
 	color: black;
+}
+
+.restaurants figure:hover
+{
+	opacity: 0.7;
+	box-shadow: -1px 2px 10px black;
+	transition-duration: 500ms;
 }
 
 .restaurants figcaption
