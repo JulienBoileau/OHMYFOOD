@@ -344,30 +344,28 @@
 	{
 		text-decoration: none;
 		color: white;
+		text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 14px 50px;
+    font-size: 15px;
+    font-weight: 400;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border-radius: 40px;
+    border-style: none;
 	}
 
 
 	#commander
 	{
 		text-align: center;
-		margin-left: 30%;
-		margin-right: 30%;
-		padding-top: 14px;
-		padding-bottom: 14px;
-		font-size: 15px;
-		font-weight: 400;
-		background: linear-gradient(#FF79DA, #9356DC);
-		border-radius: 40px;
-		border-style: none;	
-		transform: scale(1.0);
 	}
 
 
-	#commander:hover
+	#commander a:hover
 	{
 		opacity: 0.8;
 		box-shadow: -2px 2px 6px black;
-		transform: scale(1.05);
 		transition-duration: 500ms;
 	}
 
@@ -463,7 +461,7 @@
  		white-space: normal;
  	}
 
- 	#prix
+ 	.prix
  	{
  		display: none;
 	}
@@ -474,7 +472,7 @@
 		font-weight: bold;
 	}
 
-	#commander
+	#commander a
 	{
 		font-size: 18px;
 		padding-bottom: 20px;
@@ -673,7 +671,7 @@
 				  transform: rotate(0deg);
 	}
 
-	#commander
+	#commander a
 	{
 		font-size: 18px;
 		padding-bottom: 20px;
