@@ -165,7 +165,7 @@
 	.deuxieme_ligne
 	{
 		white-space: normal;
-		font-size: 16px;
+		font-size: 14px;
 		display: flex;
 		justify-content: space-between;
 		margin-right: 6%;
@@ -190,7 +190,7 @@
 		opacity: 1;
 		position: absolute;
 		color: white;
-		margin-top: 18px;
+		margin-top: 20px;
 		margin-left: 20px;
 	}
 
@@ -589,6 +589,7 @@
 
  	.bouton
  	{
+ 		height: 85px;
  		padding-bottom: 30px;
  		padding-top: 30px;
  		line-height: 25px;
@@ -618,10 +619,10 @@
 		opacity: 0;
 		display: flex;
 		font-size: 20px;
-		margin-top: -125px;
+		margin-top: -145px;
 		margin-left: 100%;
 		width: 60px;
-		height: 125px;
+		height: 145px;
 		border-top-right-radius: 15px;
 		border-bottom-right-radius: 15px;
 	}
@@ -631,7 +632,7 @@
 		opacity: 1;
 		position: absolute;
 		color: white;
-		margin-top: 50px;
+		margin-top: 60px;
 		margin-left: 20px;
 	}
 
