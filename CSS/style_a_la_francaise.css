@@ -1,0 +1,771 @@
+		
+		/*BODY*/
+
+	body
+	{
+		font-family: 'Roboto', sans-serif;
+		margin: auto;
+		overflow-x: hidden;
+	}
+
+	h1
+	{
+		font-family: 'Shrikhand', cursive;
+	}
+
+		/*HEADER*/
+
+	header
+	{
+		width: 100%;
+	}
+
+
+	#logo_ohmyfood
+	{
+		width: auto;
+		text-align: center;
+		padding-bottom: 10px;
+	}
+
+
+	#logo_ohmyfood img
+	{
+		width: 160px;
+		margin-top: 20px;
+	}
+
+
+	.en_tete_page_1 a
+	{
+		position: absolute;
+		color: black;
+		margin-top: 25px;
+		margin-left: 20px;
+		transform: scale(1.0);
+	}
+
+
+	.en_tete_page_1 a:hover
+	{
+		transform: scale(1.2);
+		transition-duration: 500ms;
+	}
+
+	#arriere_plan
+	{
+		width: 100%;
+		height: 260px;
+		background-image: url(background/a_la_francaise_2.jpg);
+		background-repeat: no-repeat;
+		background-size: 100% 260px;
+		background-size: cover;
+	}
+
+
+
+	#image_en_tete img
+	{
+		width: 100%;
+		height : 260px;
+		margin-left: 0px;
+		object-fit: cover;
+	}
+
+
+		/*SECTION*/
+
+
+	section
+	{
+		width: 100%;
+		overflow: hidden;
+		background: whitesmoke;
+		border-top-left-radius: 40px;
+		border-top-right-radius: 40px;
+		margin-top: -55px;
+		padding-top: 10px;
+		padding-bottom: 70px;
+	}
+
+
+	.prix_tablette
+	{
+		display: none;
+	}
+
+
+	.titre_restaurant
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 91%
+	}
+
+	.titre_restaurant a
+	{
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		color: black;
+	}
+
+	.titre_restaurant i
+	{
+		font-size: 25px;
+	}
+
+	.titre_restaurant i:hover
+	{
+		font-weight: 800;
+		color: transparent;
+		
+		-webkit-background-clip: text;
+		background-clip: text;
+		background-image: -webkit-linear-gradient(linear, left bottom, left top, #9356DC, #FF79DA);
+		background-image: linear-gradient(to top, #FF79DA, #9356DC);
+			transition: 500ms;
+	
+	
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke: 0;
+	}
+
+	h1
+	{
+		margin-left: 4%;
+		font-size: 25px;
+	}
+
+	h2
+	{
+		margin-left: 4%;
+		padding-top: 10px;
+		padding-bottom: 5px;
+		width: 40px;
+		font-size: 15px;
+		font-weight: 400;
+		border-bottom: 3px #99E2D0 solid;
+	}
+
+	.entrees_boutons p, .plats_boutons p, .desserts_boutons p
+	{
+		width: 100%;
+	}
+
+
+	.premiere_ligne 
+
+	{
+		display: flex
+	}
+
+
+	.deuxieme_ligne
+	{
+		white-space: normal;
+		font-size: 14px;
+		display: flex;
+		justify-content: space-between;
+		margin-right: 6%;
+	}
+
+
+	.animation_fond
+	{
+		opacity: 0;
+		display: flex;
+		font-size: 20px;
+		margin-top: -65px;
+		margin-left: 95%;
+		width: 0px;
+		height: 65px;
+		border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px;
+	}
+
+	.animation_cercle 
+	{
+		opacity: 0;
+		display: flex;
+		justify-content: center;
+		color: white;
+		margin-top: 32px;
+	}
+
+	.bouton:hover .animation_cercle
+	{
+		opacity: 1;
+	}
+
+	@keyframes circle
+	{
+		0%
+		{
+			opacity: 0;
+		}
+
+		60%
+		{
+			opacity: 1;
+		}
+	}
+
+	.compo
+	{
+		width: 90%;
+	}
+
+	.bouton:hover .compo, .bouton:hover .premiere_ligne strong
+	{
+		width: 85%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+
+	.menutexte 
+	{
+		width: 100%;
+	}
+
+	.animation2 
+	{
+		background-color: #99E2D0;
+		width: 0px;
+		height: 65px;
+		border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px;
+	}
+
+
+	.bouton:hover .animation2 
+	{
+		width: 65px;
+		transition-duration: 500ms;
+	}
+
+	.bouton .animation2 i
+	{
+		-webkit-transform: translateX(-8px) rotate(0deg);
+			transform: translateX(-8px) rotate(0deg);
+	}
+
+	.bouton:hover .animation2 i 
+	{
+		transition-duration: 500ms;
+		-webkit-transform: translateX(0px) rotate(360deg);
+				  transform: translateX(0px) rotate(360deg);
+	}
+
+
+	.bouton
+	{
+		display: flex;
+		align-items: center;
+		width: 90%;
+		height: 65px;
+		margin: auto;
+		margin-top: 15px;
+		padding-left: 15px;
+		font-size: 17px;
+		line-height: 22px;
+		background: white;
+		border-radius: 15px;
+		box-shadow: 1px 1px 8px #DCDCDC;
+	}
+
+	.entrees
+	{
+		animation: bounce_in_top 1s both;
+	}
+
+	.plats
+	{
+		animation: bounce_in_top 1.2s both;
+	}
+	
+	.desserts
+	{
+		animation: bounce_in_top 1.5s both;
+	}
+
+
+
+	@keyframes bounce_in_top 
+	{
+	  0% {
+	    -webkit-transform: translateY(-500px);
+	            transform: translateY(-500px);
+	    -webkit-animation-timing-function: ease-in;
+	            animation-timing-function: ease-in;
+	    opacity: 0;
+	  }
+	  38% {
+	    -webkit-transform: translateY(0);
+	            transform: translateY(0);
+	    -webkit-animation-timing-function: ease-out;
+	            animation-timing-function: ease-out;
+	    opacity: 1;
+	  }
+	  55% {
+	    -webkit-transform: translateY(-65px);
+	            transform: translateY(-65px);
+	    -webkit-animation-timing-function: ease-in;
+	            animation-timing-function: ease-in;
+	  }
+	  72% {
+	    -webkit-transform: translateY(0);
+	            transform: translateY(0);
+	    -webkit-animation-timing-function: ease-out;
+	            animation-timing-function: ease-out;
+	  }
+	  81% {
+	    -webkit-transform: translateY(-28px);
+	            transform: translateY(-28px);
+	    -webkit-animation-timing-function: ease-in;
+	            animation-timing-function: ease-in;
+	  }
+	  90% {
+	    -webkit-transform: translateY(0);
+	            transform: translateY(0);
+	    -webkit-animation-timing-function: ease-out;
+	            animation-timing-function: ease-out;
+	  }
+	  95% {
+	    -webkit-transform: translateY(-8px);
+	            transform: translateY(-8px);
+	    -webkit-animation-timing-function: ease-in;
+	            animation-timing-function: ease-in;
+	  }
+	  100% {
+	    -webkit-transform: translateY(0);
+	            transform: translateY(0);
+	    -webkit-animation-timing-function: ease-out;
+	            animation-timing-function: ease-out;
+	  }
+	}
+
+
+	.desserts
+	{
+		margin-bottom: 60px;
+	}
+
+
+	.entrees a, .plats a, .desserts a
+	{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		text-decoration: none;
+		color: black;
+	}
+
+	#commander a
+	{
+		text-decoration: none;
+		color: white;
+		text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 14px 50px;
+    font-size: 15px;
+    font-weight: 400;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border-radius: 40px;
+    border-style: none;
+	}
+
+
+	#commander
+	{
+		text-align: center;
+	}
+
+
+	#commander a:hover
+	{
+		opacity: 0.8;
+		box-shadow: -2px 2px 6px black;
+		transition-duration: 500ms;
+	}
+
+
+		/*FOOTER*/
+
+
+	footer
+	{
+		width: auto;
+		padding: 25px;
+		background: #404040;
+	}
+
+	footer p
+	{
+		width: auto;
+		color: white;
+		line-height: 27px;
+	}
+
+
+	footer i
+	{
+		padding-right: 7px;
+	}
+
+	footer a
+	{
+		text-decoration: none;
+		color: white;
+	}
+
+	#logo_footer_ohmyfood img
+	{
+		filter: invert(100%);
+		width: 100px;
+	}
+
+
+
+	/*RESPONSIVE TABLETTE*/
+
+
+
+ @media screen and (min-width: 768px) and (max-width: 912px)	
+
+ {
+ 	.titre_restaurant
+ 	{
+ 		display: flex;
+ 		justify-content: center;
+ 		width: 100%;
+ 	}
+
+ 	.titre_restaurant i
+ 	{
+ 		margin-left: 100%;
+ 		font-size: 30px;
+ 	}
+
+ 	h1
+ 	{
+ 		font-size: 32px;
+ 		margin-left: 0;
+ 	}
+
+ 	.menu
+ 	{
+ 		display: flex;
+ 		flex-direction: row;
+ 		width: 100%;
+ 		margin-bottom: 40px;
+ 	}
+
+ 	.entrees, .plats, .desserts
+ 	{
+ 		display: flex;
+ 		flex-direction: column;
+ 		width: 35%;
+ 		margin: 15px;
+ 	}
+
+ 	.bouton
+ 	{
+ 		padding-bottom: 35px;
+ 		padding-top: 35px;
+ 		line-height: 20px;
+ 	}
+
+ 	.deuxieme_ligne
+ 	{
+ 		white-space: normal;
+ 	}
+
+ 	.prix
+ 	{
+ 		display: none;
+	}
+
+	.prix_tablette
+	{
+		display: flex;
+		font-weight: bold;
+	}
+
+	#commander a
+	{
+		font-size: 18px;
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+
+	.animation_fond
+	{
+		opacity: 0;
+		display: flex;
+		font-size: 20px;
+		margin-top: -135px;
+		margin-left: 100%;
+		width: 60px;
+		height: 135px;
+		border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px;
+	}
+
+	.animation2 
+	{
+		background-color: #99E2D0;
+		width: 0px;
+		height: 135px;
+		border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px;
+	}
+
+	.animation_cercle 
+	{
+		opacity: 0;
+		display: flex;
+		justify-content: center;
+		color: white;
+		margin-top: 65px;
+		animation-name: circle;
+	}
+
+	.bouton:hover .compo, .bouton:hover .premiere_ligne strong
+	{
+		width: 95%;
+		white-space: normal;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.bouton:hover p
+	{
+		transition-duration: 0.5s;
+		width: 72%; /* voir calc() */
+	}
+
+	.bouton:hover + .animation_fond
+	{
+		opacity: 1;
+		margin-left: calc(100% - 60px);
+		background-color: #99E2D0;
+		transition-duration: 0.5s;
+	}
+
+	.bouton + .animation_fond i
+	{
+		-webkit-transform: rotate(180deg);
+			transform: rotate(180deg);
+	}
+
+
+
+	.bouton:hover + .animation_fond i 
+	{
+		transition-duration: 1s;
+		-webkit-transform: rotate(0deg);
+				  transform: rotate(0deg);
+	}
+
+}
+
+
+
+ 	/*RESPONSIVE DESKTOP*/
+
+
+
+  @media screen and (min-width: 912px) 
+
+ {
+
+ 	.titre_restaurant
+ 	{
+ 		display: flex;
+ 		justify-content: center;
+ 		width: 100%;
+ 	}
+
+ 	.titre_restaurant i
+ 	{
+ 		margin-left: 100%;
+ 		font-size: 30px;
+ 	}
+
+ 	h1
+ 	{
+ 		font-size: 32px;
+ 		margin-left: 0;
+ 	}
+
+	.menu
+ 	{
+ 		display: flex;
+ 		flex-direction: row;
+ 		width: 100%;
+ 		margin-bottom: 40px;
+ 	}
+
+ 	.entrees, .plats, .desserts
+ 	{
+ 		display: flex;
+ 		flex-direction: column;
+ 		width: 35%;
+ 		margin: 15px;
+ 	}
+
+ 	.bouton
+ 	{
+ 		height: 85px;
+ 		padding-bottom: 30px;
+ 		padding-top: 30px;
+ 		line-height: 25px;
+ 	}
+
+	.premiere_ligne 
+	{
+		display: flex;
+		width: 70%;
+	}
+
+	.compo
+	{
+		width: 80%;
+	}
+
+ 	.deuxieme_ligne
+
+ 	{
+ 		white-space: normal;
+		display: flex;
+		justify-content: space-between;
+ 	}
+
+	.animation_fond
+	{
+		opacity: 0;
+		display: flex;
+		font-size: 20px;
+		margin-top: -145px;
+		margin-left: 100%;
+		width: 60px;
+		height: 145px;
+		border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px;
+	}
+
+	.animation2 
+	{
+		background-color: #99E2D0;
+		width: 0px;
+		height: 145px;
+		border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px;
+	}
+
+	.animation_cercle 
+	{
+		opacity: 0;
+		display: flex;
+		justify-content: center;
+		color: white;
+		margin-top: 70px;
+		animation-name: circle;
+	}
+
+	.bouton:hover .compo, .bouton:hover .premiere_ligne strong
+	{
+		width: 90%;
+		white-space: normal;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.bouton:hover p
+	{
+		transition-duration: 0.5s;
+		width: 72%; 
+	}
+
+
+	.bouton:hover + .animation_fond
+	{
+		opacity: 1;
+		margin-left: calc(100% - 60px - 2%);
+		background-color: #99E2D0;
+		transition-duration: 0.5s;
+	}
+
+
+	.bouton + .animation_fond i
+	{
+		-webkit-transform: rotate(180deg);
+			transform: rotate(180deg);
+	}
+
+	.bouton:hover + .animation_fond i 
+	{
+		transition-duration: 1s;
+		-webkit-transform: rotate(0deg);
+				  transform: rotate(0deg);
+	}
+
+	#commander a
+	{
+		font-size: 18px;
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+
+ }
+
+
+
+/* RESPONSIVE ANIMATION */
+
+
+ @media screen and (max-width: 360px) 
+{
+	.bouton:hover + .animation_fond
+	{
+		opacity: 1;
+		margin-left: calc(100% - 65px);
+		background-color: #99E2D0;
+		transition-duration: 0.5s;
+	}
+
+	.bouton:hover .deuxieme_ligne
+	{
+		transition-duration: 0.5s;
+		width: 78%;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+
+}
+
+ @media screen and (min-width: 550px) and (max-width: 767px) 
+ {
+ 	.bouton:hover + .animation_fond
+	{
+		opacity: 1;
+		margin-left: calc(100% - 78px);
+		background-color: #99E2D0;
+		transition-duration: 0.5s;
+	}
+
+	.bouton:hover p
+	{
+		transition-duration: 0.5s;
+		width: 90%;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+ }
